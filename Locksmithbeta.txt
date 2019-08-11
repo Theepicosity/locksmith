@@ -1,7 +1,6 @@
 Let's make a game!
 	name:Locksmith
 	by:Theepicosity
-	desc:You make locks...
 	created:11/8/2019
 	updated:11/8/2019
 	version:1.0
@@ -11,6 +10,7 @@ Settings
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 	stylesheet:stuff/bigBlue.css
+	no bulk particles
 
 Layout
 	use default
@@ -33,3 +33,9 @@ Resources
 		desc:Locks things.
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		show earned
+Buildings
+	*locksmith
+		name:Locksmith
+		desc:A nice locksmith to smith more locks.
+		on tick:yield 1 lock
+		cost:10 locks
