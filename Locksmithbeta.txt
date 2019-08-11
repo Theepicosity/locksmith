@@ -49,25 +49,28 @@ Upgrades
 	  desc:Clicking is twice as effective<//><i>It's so tiny!</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:50 locks
-	  req:no uMalletMouse
+	  on click:hidden
 	*uHammerMouse
 	  name:Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>Now we're smithing with fire.<//>With your mighty hammer in hand, you may now start your quest.</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:300 locks
-	  req:100 locks:earned and uMalletMouse and no uHammerMouse
+	  req:100 locks:earned and uMalletMouse
+	  on click:hidden
 	*uBigHammerMouse
 	  name:Bigger Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>What's better than a hammer?</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:1600 locks
-	  req:500 locks:earned and uHammerMouse and no uBigHammerMouse
+	  req:500 locks:earned and uHammerMouse
+	  on click:hidden
 	*uSledgehammerMouse
 	  name:Sledgehammer Mouse
 	  desc:Clicking is twice as effective<//><i>Don't try this at home.</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:75000 locks
-	  req:2000 locks:earned and uBigHammerMouse and no uSledgehammerMouse
+	  req:2000 locks:earned and uBigHammerMouse
+	  on click:hidden
 	  
 	//building upgrades
 	//locksmith
