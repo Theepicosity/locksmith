@@ -27,7 +27,7 @@ Buttons
 		tooltip origin:bottom
 		tooltip class:red
 		show clicks
-Rescources
+Resources
 	*lock|locks
 		name:lock
 		desc:Locks things.
