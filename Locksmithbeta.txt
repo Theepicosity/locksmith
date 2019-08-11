@@ -80,4 +80,12 @@ Upgrades
 	  desc:Locksmiths are twice as effective<//><i>Remember the first rule of locksmithing: never touch hot metals without your parents permission.</i>
 	  passive:multiply yield of locksmith by 2
 	  cost:530 locks
+	  req:locksmith >= 10
+	  on click:hide uMetalworkingSchool
+	*uSafetyProcedures
+	  name:Safety Prcedures
+	  desc:Locksmiths are twice as effective<//><i>As to be OSHA compliant.</i>
+	  passive:multiply yield of locksmith by 2
+	  cost:33000 locks
+	  req:locksmith >= 50 and uMetalWorkingSchool
 	  on click:hide uMetalworkingSchool
