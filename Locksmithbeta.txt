@@ -35,6 +35,7 @@ Resources
 		desc:Locks things.
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		show earned
+		hidden
 Buildings
 	*locksmith
 		name:Locksmith
