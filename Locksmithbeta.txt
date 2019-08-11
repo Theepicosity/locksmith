@@ -8,8 +8,9 @@ Let's make a game!
 Settings
 	building cost increase:125%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
-	stylesheet:stuff/bigBlue.css
+	spritesheet:building1, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/building1.jpg
+	spritesheet:upgrade1, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/upgrade1.jpg
+	stylesheet:stuff/basic.css
 	no bulk particles
 
 Layout
@@ -23,13 +24,14 @@ Buttons
 		on click:yield 1 lock
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/keklock.jpg
 		no text
+		no tooltip
 		class:bigButton hasFlares
 		tooltip origin:bottom
 		tooltip class:red
 		show clicks
 Resources
 	*lock|locks
-		name:locks
+		name:Lock
 		desc:Locks things.
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		show earned
@@ -39,11 +41,13 @@ Buildings
 		desc:A nice locksmith to smith more locks.
 		on tick:yield 0.1 lock
 		cost:10 locks
+		icon:building1[0,1]
 	*bridge
 		name:Bridge
 		desc:A place where various locks accumulate.
 		on tick:yield 1 lock
 		cost:100 locks
+		icon:building1[1,0]
 
 Upgrades
 
@@ -55,6 +59,7 @@ Upgrades
 	  passive:multiply yield of bigLock by 2
 	  cost:50 locks
 	  on click:hide this
+	  icon:upgrade1[0,1]
 	*uHammerMouse
 	  name:Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>With your mighty hammer in hand, you may now truly start your quest.</i>
@@ -62,6 +67,7 @@ Upgrades
 	  cost:300 locks
 	  req:100 locks:earned and uMalletMouse
 	  on click:hide this
+	  icon:upgrade1[0,1]
 	*uBigHammerMouse
 	  name:Bigger Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>What's better than a hammer?</i>
@@ -69,6 +75,7 @@ Upgrades
 	  cost:1600 locks
 	  req:500 locks:earned and uHammerMouse
 	  on click:hide this
+	  icon:upgrade1[0,1]
 	*uSledgehammerMouse|uSledgeHammerMouse
 	  name:Sledgehammer Mouse
 	  desc:Clicking is twice as effective<//><i>Don't try this at home.</i>
@@ -76,6 +83,7 @@ Upgrades
 	  cost:75000 locks
 	  req:2000 locks:earned and uBigHammerMouse
 	  on click:hide this
+	  icon:upgrade1[0,1]
 	  
 	//building upgrades
 	//locksmith
@@ -85,15 +93,25 @@ Upgrades
 	  desc:Locksmiths are twice as effective<//><i>Remember the first rule of locksmithing: never touch hot metals without your parents permission.</i>
 	  passive:multiply yield of locksmith by 2
 	  cost:530 locks
-	  req:locksmith >= 10
+	  req:locksmith >= 5
 	  on click:hide this
+	  icon:upgrade1[0,3]
 	*uSafetyProcedures
 	  name:Safety Procedures
 	  desc:Locksmiths are twice as effective<//><i>As to be OSHA compliant.</i>
 	  passive:multiply yield of locksmith by 2
-	  cost:33000 locks
-	  req:locksmith >= 50 and uMetalWorkingSchool
+	  cost:3300 locks
+	  req:locksmith >= 10 and uMetalWorkingSchool
 	  on click:hide this
+	  icon:upgrade1[0,3]
+	*uDiamondAnvils
+	  name:Diamond Anvils
+	  desc:Locksmiths are twice as effective<//><i>The rarest form of naturally occuring anvil.</i>
+	  passive:multiply yield of locksmith by 2
+	  cost:130000 locks
+	  req:locksmith >= 20 and uSafetyProcedures
+	  on click:hide this
+	  icon:upgrade1[0,3]
 	  
 	//bridge
 
@@ -101,16 +119,26 @@ Upgrades
 	  name:Sturdy Supports
 	  desc:Bridges are twice as effective<//><i>Shipped from the bridge capital of the world, Bejing.</i>
 	  passive:multiply yield of bridge by 2
-	  cost:5000 locks
-	  req:bridge >= 10
+	  cost:1400 locks
+	  req:bridge >= 5
 	  on click:hide this
+	  icon:upgrade1[1,0]
 	*uChainLinkFences
 	  name:Chain Link Fences
 	  desc:Bridges are twice as effective<//><i>Angry over the removal of locks from Pont des Arts, tourists began to furiously put locks all over the biggest chain link fence in the world, the Eiffel Tower.</i>
 	  passive:multiply yield of bridge by 2
-	  cost:232000 locks
-	  req:bridge >= 50 and uSturdySupports
+	  cost:63200 locks
+	  req:bridge >= 10 and uSturdySupports
 	  on click:hide this
+	  icon:upgrade1[1,0]
+	*uAntiFallingMechanisms
+	  name:Anti-Falling Mechanisms
+	  desc:Bridges are twice as effective<//><i>Also prevents bridges from being rebuilt in Arizona.</i>
+	  passive:multiply yield of bridge by 2
+	  cost:750000 locks
+	  req:bridge >= 20 and uSturdySupports
+	  on click:hide this
+	  icon:upgrade1[1,0]
 	  
 	//lock types
 	
@@ -118,34 +146,39 @@ Upgrades
 	  name:Combination Locks
 	  desc:Buildings get +1% Locks per second<//><i>It's a lock, and you are the key. Woah.</i>
 	  passive:multiply yield of :Buildings by 0.01
-	  cost:100000 locks
+	  cost:10000 locks
 	  req:10000 locks:earned
 	  on click:hide this
+	  icon:upgrade1[1,2]
 	*ulKnob
 	  name:Knob Locks
 	  desc:Buildings get +1% Locks per second<//><i>Easy to open, only useful on doors, still 3/10.</i>
 	  passive:multiply yield of :Buildings by 0.01
-	  cost:500000 locks
+	  cost:50000 locks
 	  req:50000 locks:earned
 	  on click:hide this
+	  icon:upgrade1[2,1]
 	*ulDeadbolt
 	  name:Deadbolts
 	  desc:Buildings get +1.5% Locks per second<//><i>Noone's getting through these.</i>
 	  passive:multiply yield of :Buildings by 0.015
-	  cost:1000000 locks
+	  cost:100000 locks
 	  req:100000 locks:earned
 	  on click:hide this
+	  icon:upgrade1[2,3]
 	*ulRim
 	  name:Rim Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Mortise locks.</i>
 	  passive:multiply yield of :Buildings by 0.02
-	  cost:2500000 locks
+	  cost:250000 locks
 	  req:250000 locks:earned
 	  on click:hide this
+	  icon:upgrade1[3,0]
 	*ulMortise
 	  name:Mortise Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Rim locks.</i>
 	  passive:multiply yield of :Buildings by 0.02
-	  cost:2500000 locks
+	  cost:250000 locks
 	  req:250000 locks:earned
 	  on click:hide this
+	  icon:upgrade1[3,0]
