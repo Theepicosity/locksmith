@@ -49,28 +49,28 @@ Upgrades
 	  desc:Clicking is twice as effective<//><i>It's so tiny!</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:50 locks
-	  on click:hide uMalletMouse
+	  on click:hide this
 	*uHammerMouse
 	  name:Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>With your mighty hammer in hand, you may now truly start your quest.</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:300 locks
 	  req:100 locks:earned and uMalletMouse
-	  on click:hide uHammerMouse
+	  on click:hide this
 	*uBigHammerMouse
 	  name:Bigger Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>What's better than a hammer?</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:1600 locks
 	  req:500 locks:earned and uHammerMouse
-	  on click:hide uBigHammerMouse
+	  on click:hide this
 	*uSledgehammerMouse|uSledgeHammerMouse
 	  name:Sledgehammer Mouse
 	  desc:Clicking is twice as effective<//><i>Don't try this at home.</i>
 	  passive:multiply yield of bigLock by 2
 	  cost:75000 locks
 	  req:2000 locks:earned and uBigHammerMouse
-	  on click:hide uSledgehammerMouse
+	  on click:hide this
 	  
 	//building upgrades
 	//locksmith
@@ -81,11 +81,49 @@ Upgrades
 	  passive:multiply yield of locksmith by 2
 	  cost:530 locks
 	  req:locksmith >= 10
-	  on click:hide uMetalworkingSchool
+	  on click:hide this
 	*uSafetyProcedures
 	  name:Safety Prcedures
 	  desc:Locksmiths are twice as effective<//><i>As to be OSHA compliant.</i>
 	  passive:multiply yield of locksmith by 2
 	  cost:33000 locks
 	  req:locksmith >= 50 and uMetalWorkingSchool
-	  on click:hide uMetalworkingSchool
+	  on click:hide this
+	  
+	//lock types
+	
+	*ulCombination
+	  name:Combination Locks
+	  desc:Buildings get +1% Locks per second<//><i>It's a lock, and you are the key. Woah.</i>
+	  passive:multiply yield of Buildings by 0.01
+	  cost:100000 locks
+	  req:10000 locks:earned
+	  on click:hide this
+	*ulKnob
+	  name:Knob Locks
+	  desc:Buildings get +1% Locks per second<//><i>Easy to open, only useful on doors, still 3/10.</i>
+	  passive:multiply yield of Buildings by 0.01
+	  cost:500000 locks
+	  req:50000 locks:earned
+	  on click:hide this
+	*ulDeadbolt
+	  name:Deadbolts
+	  desc:Buildings get +2% Locks per second<//><i>Noone's getting through these.</i>
+	  passive:multiply yield of Buildings by 0.02
+	  cost:1000000 locks
+	  req:100000 locks:earned
+	  on click:hide this
+	*ulRim
+	  name:Rim Locks
+	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Mortise locks.</i>
+	  passive:multiply yield of Buildings by 0.02
+	  cost:2500000 locks
+	  req:250000 locks:earned
+	  on click:hide this
+	*ulMortise
+	  name:Mortise Locks
+	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Rim locks.</i>
+	  passive:multiply yield of Buildings by 0.02
+	  cost:2500000 locks
+	  req:250000 locks:earned
+	  on click:hide this
