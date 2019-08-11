@@ -98,7 +98,7 @@ Upgrades
 	//bridge
 
 	*uSturdySupports
-	  name:Metalworking School
+	  name:Sturdy Supports
 	  desc:Bridges are twice as effective<//><i>Shipped from the bridge capital of the world, Bejing.</i>
 	  passive:multiply yield of bridge by 2
 	  cost:5000 locks
