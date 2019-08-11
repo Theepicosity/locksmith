@@ -6,7 +6,7 @@ Let's make a game!
 	version:1.0
 
 Settings
-	building cost increase:115%
+	building cost increase:125%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 	stylesheet:stuff/bigBlue.css
@@ -39,6 +39,11 @@ Buildings
 		desc:A nice locksmith to smith more locks.
 		on tick:yield 0.1 lock
 		cost:10 locks
+	*bridge
+		name:Bridge
+		desc:A place where various locks accumulate.
+		on tick:yield 1 lock
+		cost:100 locks
 
 Upgrades
 
@@ -90,6 +95,23 @@ Upgrades
 	  req:locksmith >= 50 and uMetalWorkingSchool
 	  on click:hide this
 	  
+	//bridge
+
+	*uSturdySupports
+	  name:Metalworking School
+	  desc:Bridges are twice as effective<//><i>Shipped from the bridge capital of the world, Bejing.</i>
+	  passive:multiply yield of bridge by 2
+	  cost:5000 locks
+	  req:bridge >= 10
+	  on click:hide this
+	*uChainLinkFences
+	  name:Chain Link Fences
+	  desc:Bridges are twice as effective<//><i>Angry over the removal of locks from Pont des Arts, tourists began to furiously put locks all over the biggest chain link fence in the world, the Eiffel Tower.</i>
+	  passive:multiply yield of bridge by 2
+	  cost:232000 locks
+	  req:bridge >= 50 and uSturdySupports
+	  on click:hide this
+	  
 	//lock types
 	
 	*ulCombination
@@ -108,8 +130,8 @@ Upgrades
 	  on click:hide this
 	*ulDeadbolt
 	  name:Deadbolts
-	  desc:Buildings get +2% Locks per second<//><i>Noone's getting through these.</i>
-	  passive:multiply yield of Buildings by 0.02
+	  desc:Buildings get +1.5% Locks per second<//><i>Noone's getting through these.</i>
+	  passive:multiply yield of Buildings by 0.015
 	  cost:1000000 locks
 	  req:100000 locks:earned
 	  on click:hide this
