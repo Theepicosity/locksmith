@@ -37,5 +37,5 @@ Buildings
 	*locksmith
 		name:Locksmith
 		desc:A nice locksmith to smith more locks.
-		on tick:yield 1 lock
+		on tick:yield 0.1 lock
 		cost:10 locks
