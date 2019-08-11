@@ -29,7 +29,7 @@ Buttons
 		show clicks
 Resources
 	*lock|locks
-		name:lock
+		name:locks
 		desc:Locks things.
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		show earned
