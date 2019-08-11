@@ -117,35 +117,35 @@ Upgrades
 	*ulCombination
 	  name:Combination Locks
 	  desc:Buildings get +1% Locks per second<//><i>It's a lock, and you are the key. Woah.</i>
-	  passive:multiply yield of Buildings by 0.01
+	  passive:multiply yield of :Buildings by 0.01
 	  cost:100000 locks
 	  req:10000 locks:earned
 	  on click:hide this
 	*ulKnob
 	  name:Knob Locks
 	  desc:Buildings get +1% Locks per second<//><i>Easy to open, only useful on doors, still 3/10.</i>
-	  passive:multiply yield of Buildings by 0.01
+	  passive:multiply yield of :Buildings by 0.01
 	  cost:500000 locks
 	  req:50000 locks:earned
 	  on click:hide this
 	*ulDeadbolt
 	  name:Deadbolts
 	  desc:Buildings get +1.5% Locks per second<//><i>Noone's getting through these.</i>
-	  passive:multiply yield of Buildings by 0.015
+	  passive:multiply yield of :Buildings by 0.015
 	  cost:1000000 locks
 	  req:100000 locks:earned
 	  on click:hide this
 	*ulRim
 	  name:Rim Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Mortise locks.</i>
-	  passive:multiply yield of Buildings by 0.02
+	  passive:multiply yield of :Buildings by 0.02
 	  cost:2500000 locks
 	  req:250000 locks:earned
 	  on click:hide this
 	*ulMortise
 	  name:Mortise Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Rim locks.</i>
-	  passive:multiply yield of Buildings by 0.02
+	  passive:multiply yield of :Buildings by 0.02
 	  cost:2500000 locks
 	  req:250000 locks:earned
 	  on click:hide this
