@@ -1,31 +1,35 @@
 Let's make a game!
-	name:Bunny Clicker
-	by:Orteil
-	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
-	created:25/7/2017
-	updated:24/10/2017
-	version:1
+	name:Locksmith
+	by:Theepicosity
+	desc:You make locks...
+	created:11/8/2019
+	updated:11/8/2019
+	version:1.0
 
 Settings
-	background:stuff/meadow.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 	stylesheet:stuff/bigBlue.css
 
 Layout
 	use default
 		
 Buttons
-	*bunnyButton
-		name:Make a bunny
-		desc:Click this little bunny to get more bunnies!
+	*biglock|bigLock
+		name:Big Lock
+		desc:Causes you to make a lock.
 		on click:anim icon wobble
-		on click:yield 1 bunny
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-		icon:stuff/bunny.png
+		on click:yield 1 lock
+		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		no text
 		class:bigButton hasFlares
-		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
+		show clicks
+Rescources
+	*lock|locks
+		name:lock
+		desc:Locks things.
+		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
+		show earned
