@@ -74,3 +74,10 @@ Upgrades
 	  
 	//building upgrades
 	//locksmith
+
+	*uMetalworkingSchool|MetalWorkingSchool
+	  name:Metalworking School
+	  desc:Locksmiths are twice as effective<//><i>Remember the first rule of locksmithing: never touch hot metals without your parents permission.</i>
+	  passive:multiply yield of locksmith by 2
+	  cost:530 locks
+	  on click:hide uMetalworkingSchool
