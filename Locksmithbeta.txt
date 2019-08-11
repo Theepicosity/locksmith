@@ -42,13 +42,13 @@ Buildings
 		desc:A nice locksmith to smith more locks.
 		on tick:yield 0.1 lock
 		cost:10 locks
-		icon:building1[0,1]
+		icon:building1[1,0]
 	*bridge
 		name:Bridge
 		desc:A place where various locks accumulate.
 		on tick:yield 1 lock
 		cost:100 locks
-		icon:building1[1,0]
+		icon:building1[0,1]
 
 Upgrades
 
@@ -60,7 +60,7 @@ Upgrades
 	  passive:multiply yield of bigLock by 2
 	  cost:50 locks
 	  on click:hide this
-	  icon:upgrade1[0,1]
+	  icon:upgrade1[1,0]
 	*uHammerMouse
 	  name:Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>With your mighty hammer in hand, you may now truly start your quest.</i>
@@ -68,7 +68,7 @@ Upgrades
 	  cost:300 locks
 	  req:100 locks:earned and uMalletMouse
 	  on click:hide this
-	  icon:upgrade1[0,1]
+	  icon:upgrade1[1,0]
 	*uBigHammerMouse
 	  name:Bigger Hammer Mouse
 	  desc:Clicking is twice as effective<//><i>What's better than a hammer?</i>
@@ -76,7 +76,7 @@ Upgrades
 	  cost:1600 locks
 	  req:500 locks:earned and uHammerMouse
 	  on click:hide this
-	  icon:upgrade1[0,1]
+	  icon:upgrade1[1,0]
 	*uSledgehammerMouse|uSledgeHammerMouse
 	  name:Sledgehammer Mouse
 	  desc:Clicking is twice as effective<//><i>Don't try this at home.</i>
@@ -84,7 +84,7 @@ Upgrades
 	  cost:75000 locks
 	  req:2000 locks:earned and uBigHammerMouse
 	  on click:hide this
-	  icon:upgrade1[0,1]
+	  icon:upgrade1[1,0]
 	  
 	//building upgrades
 	//locksmith
@@ -96,7 +96,7 @@ Upgrades
 	  cost:530 locks
 	  req:locksmith >= 5
 	  on click:hide this
-	  icon:upgrade1[0,3]
+	  icon:upgrade1[3,0]
 	*uSafetyProcedures
 	  name:Safety Procedures
 	  desc:Locksmiths are twice as effective<//><i>As to be OSHA compliant.</i>
@@ -104,7 +104,7 @@ Upgrades
 	  cost:3300 locks
 	  req:locksmith >= 10 and uMetalWorkingSchool
 	  on click:hide this
-	  icon:upgrade1[0,3]
+	  icon:upgrade1[3,0]
 	*uDiamondAnvils
 	  name:Diamond Anvils
 	  desc:Locksmiths are twice as effective<//><i>The rarest form of naturally occuring anvil.</i>
@@ -112,7 +112,7 @@ Upgrades
 	  cost:130000 locks
 	  req:locksmith >= 20 and uSafetyProcedures
 	  on click:hide this
-	  icon:upgrade1[0,3]
+	  icon:upgrade1[3,0]
 	  
 	//bridge
 
@@ -123,7 +123,7 @@ Upgrades
 	  cost:1400 locks
 	  req:bridge >= 5
 	  on click:hide this
-	  icon:upgrade1[1,0]
+	  icon:upgrade1[0,1]
 	*uChainLinkFences
 	  name:Chain Link Fences
 	  desc:Bridges are twice as effective<//><i>Angry over the removal of locks from Pont des Arts, tourists began to furiously put locks all over the biggest chain link fence in the world, the Eiffel Tower.</i>
@@ -131,7 +131,7 @@ Upgrades
 	  cost:63200 locks
 	  req:bridge >= 10 and uSturdySupports
 	  on click:hide this
-	  icon:upgrade1[1,0]
+	  icon:upgrade1[0,1]
 	*uAntiFallingMech
 	  name:Anti-Falling Mechanisms
 	  desc:Bridges are twice as effective<//><i>Also prevents bridges from being rebuilt in Arizona.</i>
@@ -139,7 +139,7 @@ Upgrades
 	  cost:750000 locks
 	  req:bridge >= 20 and uChainLinkFences
 	  on click:hide this
-	  icon:upgrade1[1,0]
+	  icon:upgrade1[0,1]
 	  
 	//lock types
 	
@@ -150,7 +150,7 @@ Upgrades
 	  cost:10000 locks
 	  req:10000 locks:earned
 	  on click:hide this
-	  icon:upgrade1[1,2]
+	  icon:upgrade1[2,1]
 	*ulKnob
 	  name:Knob Locks
 	  desc:Buildings get +1% Locks per second<//><i>Easy to open, only useful on doors, still 3/10.</i>
@@ -158,7 +158,7 @@ Upgrades
 	  cost:50000 locks
 	  req:50000 locks:earned
 	  on click:hide this
-	  icon:upgrade1[2,1]
+	  icon:upgrade1[1,2]
 	*ulDeadbolt
 	  name:Deadbolts
 	  desc:Buildings get +1.5% Locks per second<//><i>Noone's getting through these.</i>
@@ -166,7 +166,7 @@ Upgrades
 	  cost:100000 locks
 	  req:100000 locks:earned
 	  on click:hide this
-	  icon:upgrade1[2,3]
+	  icon:upgrade1[3,2]
 	*ulRim
 	  name:Rim Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Mortise locks.</i>
@@ -174,7 +174,7 @@ Upgrades
 	  cost:250000 locks
 	  req:250000 locks:earned
 	  on click:hide this
-	  icon:upgrade1[3,0]
+	  icon:upgrade1[0,3]
 	*ulMortise
 	  name:Mortise Locks
 	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Rim locks.</i>
@@ -182,4 +182,4 @@ Upgrades
 	  cost:250000 locks
 	  req:250000 locks:earned
 	  on click:hide this
-	  icon:upgrade1[3,0]
+	  icon:upgrade1[0,3]
