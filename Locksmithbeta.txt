@@ -131,12 +131,12 @@ Upgrades
 	  req:bridge >= 10 and uSturdySupports
 	  on click:hide this
 	  icon:upgrade1[1,0]
-	*uAntiFallingMechanisms
+	*uAntiFallingMech
 	  name:Anti-Falling Mechanisms
 	  desc:Bridges are twice as effective<//><i>Also prevents bridges from being rebuilt in Arizona.</i>
 	  passive:multiply yield of bridge by 2
 	  cost:750000 locks
-	  req:bridge >= 20 and uSturdySupports
+	  req:bridge >= 20 and uChainLinkFences
 	  on click:hide this
 	  icon:upgrade1[1,0]
 	  
