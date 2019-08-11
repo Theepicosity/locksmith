@@ -21,7 +21,7 @@ Buttons
 		desc:Causes you to make a lock.
 		on click:anim icon wobble
 		on click:yield 1 lock
-		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
+		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/keklock.jpg
 		no text
 		class:bigButton hasFlares
 		tooltip origin:bottom
@@ -39,3 +39,34 @@ Buildings
 		desc:A nice locksmith to smith more locks.
 		on tick:yield 0.1 lock
 		cost:10 locks
+
+Upgrades
+
+	//mouse upgrades
+	
+	*uMalletMouse
+	  name:Mallet Mouse
+	  desc:Clicking is twice as effective<//><i>It's so tiny!</i>
+	  passive:multiply yield of bigLock by 2
+	  cost:50 locks
+	*uHammerMouse
+	  name:Hammer Mouse
+	  desc:Clicking is twice as effective<//><i>Now we're smithing with fire.</i>
+	  passive:multiply yield of bigLock by 2
+	  cost:300 locks
+	  req:100 locks:earned and uMalletMouse
+	*uBigHammerMouse
+	  name:Bigger Hammer Mouse
+	  desc:Clicking is twice as effective<//><i>What's better than a hammer?</i>
+	  passive:multiply yield of bigLock by 2
+	  cost:1600 locks
+	  req:500 locks:earned and uHammerMouse
+	*uSledgehammerMouse
+	  name:Sledgehammer Mouse
+	  desc:Clicking is twice as effective<//><i>Don't try this at home.</i>
+	  passive:multiply yield of bigLock by 2
+	  cost:75000 locks
+	  req:2000 locks:earned and uBigHammerMouse
+	  
+	//building upgrades
+	//locksmith
