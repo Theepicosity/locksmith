@@ -10,7 +10,7 @@ Settings
 	building cost refund:50%
 	spritesheet:building1, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/building1.jpg
 	spritesheet:upgrade1, 48 by 48, https://raw.githubusercontent.com/Theepicosity/locksmith/master/upgrade1.jpg
-	stylesheet:stuff/basic.css
+	stylesheet:https://raw.githubusercontent.com/Theepicosity/locksmith/master/style.txt
 	no bulk particles
 
 Layout
