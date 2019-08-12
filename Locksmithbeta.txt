@@ -31,8 +31,8 @@ Buttons
 		show clicks
 Resources
 	*lock|locks
-		name:Lock
-		desc:Locks things.
+		name:Locks
+		desc:Lock things.
 		icon:https://raw.githubusercontent.com/Theepicosity/locksmith/master/kek.jpg
 		show earned
 Buildings
