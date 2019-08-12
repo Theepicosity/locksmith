@@ -113,6 +113,15 @@ Upgrades
 	  on click:hide this
 	  icon:upgrade1[3,0]
 	  
+	*uLockGuild
+	  name:Guild of Locksmithy
+	  desc:You get +1% LpS for every locksmith you have.<//><i>Well, it's not called a guild anymore, it's called a clauditery company, but we still call it a guild because it's cooler.</i>
+	  passive:multiply yield of locks by locksmith/100
+	  cost:2000000 locks
+	  req:locksmith >= 15 and uSafetyProcedures and 1000000 locks:earned
+	  on click:hide this
+	  icon:upgrade1[2,3]
+	  
 	//bridge
 
 	*uSturdySupports
@@ -144,7 +153,7 @@ Upgrades
 	
 	*ulCombination
 	  name:Combination Locks
-	  desc:Buildings get +1% Locks per second<//><i>It's a lock, and you are the key. Woah.</i>
+	  desc:Buildings get +1% LpS<//><i>It's a lock, and you are the key. Woah.</i>
 	  passive:multiply yield of :Buildings by 0.01
 	  cost:10000 locks
 	  req:10000 locks:earned
@@ -152,7 +161,7 @@ Upgrades
 	  icon:upgrade1[2,1]
 	*ulKnob
 	  name:Knob Locks
-	  desc:Buildings get +1% Locks per second<//><i>Easy to open, only useful on doors, still 3/10.</i>
+	  desc:Buildings get +1% LpS<//><i>Easy to open, only useful on doors, still 3/10.</i>
 	  passive:multiply yield of :Buildings by 0.01
 	  cost:50000 locks
 	  req:50000 locks:earned
@@ -160,7 +169,7 @@ Upgrades
 	  icon:upgrade1[1,2]
 	*ulDeadbolt
 	  name:Deadbolts
-	  desc:Buildings get +1.5% Locks per second<//><i>Noone's getting through these.</i>
+	  desc:Buildings get +1.5% LpS<//><i>Noone's getting through these.</i>
 	  passive:multiply yield of :Buildings by 0.015
 	  cost:100000 locks
 	  req:100000 locks:earned
@@ -168,7 +177,7 @@ Upgrades
 	  icon:upgrade1[3,2]
 	*ulRim
 	  name:Rim Locks
-	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Mortise locks.</i>
+	  desc:Buildings get +2% LpS<//><i>Not to be confused with Mortise locks.</i>
 	  passive:multiply yield of :Buildings by 0.02
 	  cost:250000 locks
 	  req:250000 locks:earned
@@ -176,7 +185,7 @@ Upgrades
 	  icon:upgrade1[0,3]
 	*ulMortise
 	  name:Mortise Locks
-	  desc:Buildings get +2% Locks per second<//><i>Not to be confused with Rim locks.</i>
+	  desc:Buildings get +2% LpS<//><i>Not to be confused with Rim locks.</i>
 	  passive:multiply yield of :Buildings by 0.02
 	  cost:250000 locks
 	  req:250000 locks:earned
